@@ -18,7 +18,7 @@ def get_home():
         html_content = file.read()
         return Response(content=html_content, status_code=200)
 
-@app.get("")
+@app.get("/")
 def get_none():
     with open("erreur404.html", "r", encoding="utf-8") as filenone:
         html_content = filenone.read()
